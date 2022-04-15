@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+
+{% block title %}
+<title>Main - MeetPoint</title>
+{% endblock %}
+
+{% block fonts %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/styles/style.css">
+{% endblock %} 
+
+{% block content %}
+<div class="container">
+  <div class="upload__file">
+    <div class="file__drop">
+      <input class="upload__file" name="file" type="file" onchange="PreviewFile(this.files[0])">
+      <button class="send__file">Submit</button>
+    </div>
+  </div>
+  <div class="file__content">
+    
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xls/0.7.4-a/xls.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
+<script src="/static/scripts/main.js"></script>
+{% endblock %}

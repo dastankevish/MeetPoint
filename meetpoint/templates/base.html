@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--<meta name="viewport" content="width=device-width, initialscale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">--!>
+  {% block title %}
+  {% endblock %}
+  {% block fonts %}
+  {% endblock %}
+  {% block css %}
+  {% endblock %}
+  <!--link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">--!>
+</head>
+<body>
+  <a class="logo" href="localhost:8080/home/">
+    <img class="logo__img" src="/static/images/logo.svg" alt="logo">
+  </a>
+  {% block content %}
+  {% endblock %}
+  {% block scripts %}
+  <!--<script src="js/ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquary.fancybox.min.js"></script>--!>
+  {% endblock %} 
+</body>
+</html>

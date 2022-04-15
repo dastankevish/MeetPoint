@@ -1,0 +1,30 @@
+{% extends 'base.html'%}
+
+{% block title %}
+<title>MeetPoint</title>
+{% endblock %}
+
+{% block fonts %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/styles/style.css">
+{% endblock %}
+
+{% block content %}
+<div class="bg">
+    <img class="bg__img" src="/static/images/world-map.svg" alt="world-map">
+</div>
+<div class="get__stated">
+  <label for="btn__get__started">
+    Let’s discover where to organize global meeting 
+  </label>
+  <a class="btn__get__started" href="localhost:8080/main/">Get started</a>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
