@@ -18,8 +18,10 @@
 <div class="container">
   <div class="upload__file">
     <div class="file__drop">
-      <input class="upload__file" name="file" type="file" onchange="PreviewFile(this.files[0])">
-      <button class="send__file">Submit</button>
+      <form method='POST' enctype='multipart/form-data'>
+        <input class="upload__file" name="file" type="file" onchange="PreviewFile(this.files[0])">
+        <button class="send__file">Submit</button>
+      </form>
     </div>
   </div>
   <div class="file__content">

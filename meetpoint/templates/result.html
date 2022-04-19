@@ -11,10 +11,30 @@
 {% endblock %}
 
 {% block css %}
-<link rel="stylesheet" href="/static/styles/styly.css">
+<link rel="stylesheet" href="/static/styles/style.css">
 {% endblock %}
 
 {% block content %}
 <div class="result__info">
+  <table>
+    <thead>
+      <tr>
+        <th>Cities</th>
+        <th>People</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in session_data.endpoints_and_people %}
+        <tr>
+          {% for cell in row %}
+            <td>{{ cell }}</td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <div class="dates">{{ session_data.start_date }}</div>
+  <div class="dates">{{ session_data.end_date }}</div>
+  <div class="result"></div>
 </div>
 {% endblock %}
